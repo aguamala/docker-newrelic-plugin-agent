@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/bin/rm -rf /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg
+/bin/cat /opt/newrelic-plugin-agent/assemble/*.cfg >> /opt/newrelic-plugin-agent/newrelic-plugin-agent.cfg
+systemctl restart newrelic-plugin-agent.service
